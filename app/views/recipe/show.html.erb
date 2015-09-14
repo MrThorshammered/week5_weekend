@@ -1,0 +1,8 @@
+<h1>This is the recipe page	</h1>
+
+<% @recipe.each do |food| %>
+<h3>Name: <%= food.name %></h3>
+<% end %>
+
+<%= link_to('Home', '/recipe') %>
+<%= link_to('Categories', '/category/show') %>

@@ -1,0 +1,8 @@
+<h1>This is the category page	</h1>
+
+<% @category.each do |cat| %>
+<h3>Name: <%= cat.name %></h3>
+<% end %>
+
+<%= link_to('Home', '/recipe') %>
+<%= link_to('Recipes', '/recipe/show') %>
